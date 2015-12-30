@@ -53,6 +53,7 @@
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		59D171EA1C3462BA009B05FD /* SampleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171E81C3462BA009B05FD /* SampleLayer.cpp */; };
 		59D171ED1C3462C8009B05FD /* SampleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171EB1C3462C8009B05FD /* SampleScene.cpp */; };
+		59D171F01C34713A009B05FD /* SampleTouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171EE1C34713A009B05FD /* SampleTouchLayer.cpp */; };
 		59EED1761C32B1EA0030E992 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EED1741C32B1EA0030E992 /* TitleScene.cpp */; };
 		59EED1791C32BA330030E992 /* TitleBackGroundLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EED1781C32BA330030E992 /* TitleBackGroundLayer.cpp */; };
 		59EED17C1C32BB080030E992 /* Sprites in Resources */ = {isa = PBXBuildFile; fileRef = 59EED17B1C32BB080030E992 /* Sprites */; };
@@ -152,6 +153,8 @@
 		59D171E91C3462BA009B05FD /* SampleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleLayer.h; sourceTree = "<group>"; };
 		59D171EB1C3462C8009B05FD /* SampleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleScene.cpp; sourceTree = "<group>"; };
 		59D171EC1C3462C8009B05FD /* SampleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleScene.h; sourceTree = "<group>"; };
+		59D171EE1C34713A009B05FD /* SampleTouchLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleTouchLayer.cpp; sourceTree = "<group>"; };
+		59D171EF1C34713A009B05FD /* SampleTouchLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTouchLayer.h; sourceTree = "<group>"; };
 		59EED1741C32B1EA0030E992 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
 		59EED1751C32B1EA0030E992 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
 		59EED1781C32BA330030E992 /* TitleBackGroundLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleBackGroundLayer.cpp; sourceTree = "<group>"; };
@@ -371,6 +374,8 @@
 				59D171E91C3462BA009B05FD /* SampleLayer.h */,
 				59D171EB1C3462C8009B05FD /* SampleScene.cpp */,
 				59D171EC1C3462C8009B05FD /* SampleScene.h */,
+				59D171EE1C34713A009B05FD /* SampleTouchLayer.cpp */,
+				59D171EF1C34713A009B05FD /* SampleTouchLayer.h */,
 			);
 			name = Sample;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				59D171ED1C3462C8009B05FD /* SampleScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				59D171F01C34713A009B05FD /* SampleTouchLayer.cpp in Sources */,
 				59EED1861C34426C0030E992 /* PlayerLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,

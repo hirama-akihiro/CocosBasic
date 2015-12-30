@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "TitleScene.h"
 #include "MainScene.h"
+#include "SampleScene.h"
 
 USING_NS_CC;
 
@@ -78,7 +79,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     register_all_packages();
 
     //シーンの生成
-    auto scene = TitleScene::createScene();
+    auto scene = SampleScene::createScene();
 
     // シーンの実行
     director->runWithScene(scene);

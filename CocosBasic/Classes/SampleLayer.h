@@ -1,14 +1,15 @@
-//
-//  SampleLayer.hpp
-//  CocosBasic
-//
-//  Created by showyou on 2015/12/31.
-//
-//
+#ifndef __SAMPLE_LAYER_H_
+#define __SAMPLE_LAYER_H_
 
-#ifndef SampleLayer_hpp
-#define SampleLayer_hpp
+#include "cocos2d.h"
 
-#include <stdio.h>
+class SampleLayer : public cocos2d::Layer
+{
+public:
+    virtual bool init();
+    virtual void update(float dt);
+    
+    CREATE_FUNC(SampleLayer);
+};
 
-#endif /* SampleLayer_hpp */
+#endif /* __SAMPLE_LAYER_H_ */

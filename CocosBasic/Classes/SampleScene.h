@@ -1,14 +1,17 @@
-//
-//  SampleScene.hpp
-//  CocosBasic
-//
-//  Created by showyou on 2015/12/31.
-//
-//
+#ifndef __SAMPLE_SCENE_H__
+#define __SAMPLE_SCENE_H__
 
-#ifndef SampleScene_hpp
-#define SampleScene_hpp
+#include "cocos2d.h"
 
-#include <stdio.h>
+class SampleScene : public cocos2d::Layer
+{
+public:
+    static cocos2d::Scene* createScene();
+    
+    virtual bool init();
+    virtual void update(float dt);
+    
+    CREATE_FUNC(SampleScene);
+};
 
-#endif /* SampleScene_hpp */
+#endif // __SAMPLE_SCENE_H__
