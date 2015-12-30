@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "TitleScene.h"
+#include "MainScene.h"
 
 USING_NS_CC;
 
@@ -8,7 +9,8 @@ static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
 static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
 
-AppDelegate::AppDelegate() {
+AppDelegate::AppDelegate()
+{
 
 }
 
@@ -34,8 +36,9 @@ static int register_all_packages()
     return 0; //flag for packages manager
 }
 
-bool AppDelegate::applicationDidFinishLaunching() {
-    // initialize director
+bool AppDelegate::applicationDidFinishLaunching()
+{
+    // ディレクターの初期化
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
@@ -47,10 +50,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
         director->setOpenGLView(glview);
     }
 
-    // turn on display FPS
-    director->setDisplayStats(true);
+    // ディスプレイ上にFPSを表示するか
+    //director->setDisplayStats(true);
 
-    // set FPS. the default value is 1.0/60 if you don't call this
+    // FPSの設定。設定しない場合のデフォルト値は 1.0 / 60.0(60fps)
     director->setAnimationInterval(1.0 / 60);
 
     // Set the design resolution
@@ -74,27 +77,29 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    //シーンの生成
+    auto scene = MainScene::createScene();
 
-    // run
+    // シーンの実行
     director->runWithScene(scene);
 
     return true;
 }
 
 // This function will be called when the app is inactive. When comes a phone call,it's be invoked too
-void AppDelegate::applicationDidEnterBackground() {
+void AppDelegate::applicationDidEnterBackground()
+{
     Director::getInstance()->stopAnimation();
 
-    // if you use SimpleAudioEngine, it must be pause
+    // SimpleAudioEngineを使用している場合、pauseする必要があります。
     // SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
 }
 
 // this function will be called when the app is active again
-void AppDelegate::applicationWillEnterForeground() {
+void AppDelegate::applicationWillEnterForeground()
+{
     Director::getInstance()->startAnimation();
 
-    // if you use SimpleAudioEngine, it must resume here
+    // SimpleAudioEngineを使用している場合、resumeする必要があります。
     // SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
