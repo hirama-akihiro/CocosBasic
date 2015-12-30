@@ -8,7 +8,7 @@ bool PlayerLayer::init()
     if ( !Layer::init() ){ return false; }
     
     // 画像を読み込みSpriteクラスに読み込む
-    Sprite* spritePlayer = Sprite::create("player.png");
+    Sprite* spritePlayer = Sprite::create("Sprites/player.png");
     
     // 画像のアンカー位置を設定
     // 範囲(0.0 ~ 1.0)、デフォルト設定：画像の中心位置(0.5,0.5)
@@ -25,9 +25,6 @@ bool PlayerLayer::init()
     
     // Spriteをレイヤーに追加する
     addChild(spritePlayer);
-    
-    // Spriteを非表示にする
-    spritePlayer->setVisible(false);
     
     return true;
 }

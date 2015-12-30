@@ -51,13 +51,14 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		59D171EA1C3462BA009B05FD /* SampleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171E81C3462BA009B05FD /* SampleLayer.cpp */; };
+		59D171ED1C3462C8009B05FD /* SampleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171EB1C3462C8009B05FD /* SampleScene.cpp */; };
 		59EED1761C32B1EA0030E992 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EED1741C32B1EA0030E992 /* TitleScene.cpp */; };
 		59EED1791C32BA330030E992 /* TitleBackGroundLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EED1781C32BA330030E992 /* TitleBackGroundLayer.cpp */; };
 		59EED17C1C32BB080030E992 /* Sprites in Resources */ = {isa = PBXBuildFile; fileRef = 59EED17B1C32BB080030E992 /* Sprites */; };
 		59EED1831C3442270030E992 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EED1811C3442270030E992 /* MainScene.cpp */; };
 		59EED1861C34426C0030E992 /* PlayerLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EED1841C34426C0030E992 /* PlayerLayer.cpp */; };
-		59EED1881C3444480030E992 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EED1871C3444480030E992 /* player.png */; };
-		59EED18B1C34465F0030E992 /* PlayBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EED18A1C34465F0030E992 /* PlayBG.png */; };
+		59EED18E1C3453310030E992 /* TitleUILayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EED18C1C3453310030E992 /* TitleUILayer.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -147,6 +148,10 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		59D171E81C3462BA009B05FD /* SampleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleLayer.cpp; sourceTree = "<group>"; };
+		59D171E91C3462BA009B05FD /* SampleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleLayer.h; sourceTree = "<group>"; };
+		59D171EB1C3462C8009B05FD /* SampleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleScene.cpp; sourceTree = "<group>"; };
+		59D171EC1C3462C8009B05FD /* SampleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleScene.h; sourceTree = "<group>"; };
 		59EED1741C32B1EA0030E992 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
 		59EED1751C32B1EA0030E992 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
 		59EED1781C32BA330030E992 /* TitleBackGroundLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleBackGroundLayer.cpp; sourceTree = "<group>"; };
@@ -156,8 +161,8 @@
 		59EED1821C3442270030E992 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
 		59EED1841C34426C0030E992 /* PlayerLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerLayer.cpp; sourceTree = "<group>"; };
 		59EED1851C34426C0030E992 /* PlayerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerLayer.h; sourceTree = "<group>"; };
-		59EED1871C3444480030E992 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player.png; path = Sprites/player.png; sourceTree = "<group>"; };
-		59EED18A1C34465F0030E992 /* PlayBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayBG.png; sourceTree = "<group>"; };
+		59EED18C1C3453310030E992 /* TitleUILayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleUILayer.cpp; sourceTree = "<group>"; };
+		59EED18D1C3453310030E992 /* TitleUILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleUILayer.h; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -289,8 +294,6 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				59EED18A1C34465F0030E992 /* PlayBG.png */,
-				59EED1871C3444480030E992 /* player.png */,
 				59EED17B1C32BB080030E992 /* Sprites */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -302,6 +305,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				59D171E51C346293009B05FD /* Sample */,
 				59EED1711C32B1580030E992 /* Title */,
 				59EED1801C343B390030E992 /* Main */,
 				59EED1731C32B1930030E992 /* Menu */,
@@ -360,6 +364,17 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		59D171E51C346293009B05FD /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				59D171E81C3462BA009B05FD /* SampleLayer.cpp */,
+				59D171E91C3462BA009B05FD /* SampleLayer.h */,
+				59D171EB1C3462C8009B05FD /* SampleScene.cpp */,
+				59D171EC1C3462C8009B05FD /* SampleScene.h */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
 		59EED1711C32B1580030E992 /* Title */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +382,8 @@
 				59EED1751C32B1EA0030E992 /* TitleScene.h */,
 				59EED1781C32BA330030E992 /* TitleBackGroundLayer.cpp */,
 				59EED17A1C32BA410030E992 /* TitleBackGroundLayer.h */,
+				59EED18C1C3453310030E992 /* TitleUILayer.cpp */,
+				59EED18D1C3453310030E992 /* TitleUILayer.h */,
 			);
 			name = Title;
 			sourceTree = "<group>";
@@ -508,7 +525,6 @@
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
-				59EED1881C3444480030E992 /* player.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
@@ -518,7 +534,6 @@
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
-				59EED18B1C34465F0030E992 /* PlayBG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,11 +555,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				59D171ED1C3462C8009B05FD /* SampleScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				59EED1861C34426C0030E992 /* PlayerLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				59EED18E1C3453310030E992 /* TitleUILayer.cpp in Sources */,
 				59EED1831C3442270030E992 /* MainScene.cpp in Sources */,
+				59D171EA1C3462BA009B05FD /* SampleLayer.cpp in Sources */,
 				59EED1791C32BA330030E992 /* TitleBackGroundLayer.cpp in Sources */,
 				59EED1761C32B1EA0030E992 /* TitleScene.cpp in Sources */,
 			);

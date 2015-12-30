@@ -1,5 +1,6 @@
 #include "TitleScene.h"
 #include "TitleBackGroundLayer.h"
+#include "TitleUILayer.h"
 
 USING_NS_CC;
 
@@ -27,6 +28,10 @@ bool TitleScene::init()
     // タイトル背景レイヤーをシーンに追加
     auto titleBackGroundLayer = TitleBackGroundLayer::create();
     addChild(titleBackGroundLayer);
+    
+    // タイトルUIレイヤーをシーンに追加
+    auto titleUILayer = TitleUILayer::create();
+    addChild(titleUILayer);
     
     return true;
 }
