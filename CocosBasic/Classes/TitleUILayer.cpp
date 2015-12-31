@@ -19,7 +19,7 @@ bool TitleUILayer::init()
     labelTitle->setString("Title Scene");
     
     // タイトルラベルの文字色を設定(デフォルト値:COLOR3B(255, 255, 255))
-    labelTitle->setColor(Color3B::WHITE);
+    labelTitle->setColor(Color3B::BLACK);
     
     // タイトルラベルの表示位置を設定
     Size winSize = Director::getInstance()->getWinSize();
@@ -35,7 +35,7 @@ bool TitleUILayer::init()
     Label* labelMessage = Label::createWithSystemFont("Touch Screen", "fonts/Marker Felt.ttf", 24);
     
     // メッセージラベルの文字色を設定(デフォルト値:COLOR3B(255, 255, 255))
-    labelMessage->setColor(Color3B::WHITE);
+    labelMessage->setColor(Color3B::BLACK);
     
     // メッセージラベルの表示位置を設定
     Vec2 messagePos = Vec2(winSize.width * 0.5, winSize.height * 0.3);
@@ -60,7 +60,7 @@ bool TitleUILayer::onTouchBegan(Touch *touch, Event *unused_event)
     // 遷移先のシーンを生成
     auto nextScene = MainScene::createScene();
     // シーンの遷移を行う
-    Director::getInstance()->replaceScene(nextScene);
+    Director::getInstance()->replaceScene(TransitionPageTurn::create(2.0f, nextScene, false));
     
     return true;
 }
