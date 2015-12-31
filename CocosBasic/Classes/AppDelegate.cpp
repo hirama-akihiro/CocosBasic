@@ -79,7 +79,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     register_all_packages();
 
     //シーンの生成
-    auto scene = SampleScene::createScene();
+    auto scene = TitleScene::createScene();
 
     // シーンの実行
     director->runWithScene(scene);

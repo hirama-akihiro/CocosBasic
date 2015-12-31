@@ -1,4 +1,5 @@
 #include "TitleUILayer.h"
+#include "MainScene.h"
 
 USING_NS_CC;
 
@@ -42,6 +43,24 @@ bool TitleUILayer::init()
     
     // メッセージラベルをレイヤーに追加
     addChild(labelMessage);
+    
+    // タッチイベントリスナーを生成
+    auto listener = EventListenerTouchOneByOne::create();
+    // イベントリスナーにタッチイベントを設定
+    listener->onTouchBegan = CC_CALLBACK_2(TitleUILayer::onTouchBegan, this);
+    // イベントリスナーをディスパッチャーに設定
+    getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
+    
+    return true;
+}
+
+// タッチ開始時に一度だけ呼ばれるメソッド
+bool TitleUILayer::onTouchBegan(Touch *touch, Event *unused_event)
+{
+    // 遷移先のシーンを生成
+    auto nextScene = MainScene::createScene();
+    // シーンの遷移を行う
+    Director::getInstance()->replaceScene(nextScene);
     
     return true;
 }
