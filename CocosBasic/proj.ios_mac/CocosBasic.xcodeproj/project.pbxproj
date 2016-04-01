@@ -51,6 +51,9 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		5924830F1C5CFE2F002AAC86 /* ManySpriteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5924830D1C5CFE2F002AAC86 /* ManySpriteLayer.cpp */; };
+		592483121C5D026B002AAC86 /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 592483111C5D026B002AAC86 /* favicon.ico */; };
+		592483141C5D0298002AAC86 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 592483131C5D0298002AAC86 /* HelloWorld.png */; };
 		59D171EA1C3462BA009B05FD /* SampleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171E81C3462BA009B05FD /* SampleLayer.cpp */; };
 		59D171ED1C3462C8009B05FD /* SampleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171EB1C3462C8009B05FD /* SampleScene.cpp */; };
 		59D171F01C34713A009B05FD /* SampleTouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D171EE1C34713A009B05FD /* SampleTouchLayer.cpp */; };
@@ -149,6 +152,10 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5924830D1C5CFE2F002AAC86 /* ManySpriteLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManySpriteLayer.cpp; sourceTree = "<group>"; };
+		5924830E1C5CFE2F002AAC86 /* ManySpriteLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ManySpriteLayer.hpp; sourceTree = "<group>"; };
+		592483111C5D026B002AAC86 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		592483131C5D0298002AAC86 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		59D171E81C3462BA009B05FD /* SampleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleLayer.cpp; sourceTree = "<group>"; };
 		59D171E91C3462BA009B05FD /* SampleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleLayer.h; sourceTree = "<group>"; };
 		59D171EB1C3462C8009B05FD /* SampleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleScene.cpp; sourceTree = "<group>"; };
@@ -297,6 +304,8 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				592483131C5D0298002AAC86 /* HelloWorld.png */,
+				592483111C5D026B002AAC86 /* favicon.ico */,
 				59EED17B1C32BB080030E992 /* Sprites */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -414,6 +423,8 @@
 				59EED1821C3442270030E992 /* MainScene.h */,
 				59EED1841C34426C0030E992 /* PlayerLayer.cpp */,
 				59EED1851C34426C0030E992 /* PlayerLayer.h */,
+				5924830D1C5CFE2F002AAC86 /* ManySpriteLayer.cpp */,
+				5924830E1C5CFE2F002AAC86 /* ManySpriteLayer.hpp */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -527,6 +538,7 @@
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				59EED17C1C32BB080030E992 /* Sprites in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
+				592483141C5D0298002AAC86 /* HelloWorld.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
@@ -536,6 +548,7 @@
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				592483121C5D026B002AAC86 /* favicon.ico in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
@@ -563,6 +576,7 @@
 				59D171ED1C3462C8009B05FD /* SampleScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				59D171F01C34713A009B05FD /* SampleTouchLayer.cpp in Sources */,
+				5924830F1C5CFE2F002AAC86 /* ManySpriteLayer.cpp in Sources */,
 				59EED1861C34426C0030E992 /* PlayerLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,

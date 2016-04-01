@@ -1,5 +1,6 @@
 #include "MainScene.h"
 #include "PlayerLayer.h"
+#include "ManySpriteLayer.hpp"
 
 USING_NS_CC;
 
@@ -24,9 +25,11 @@ bool MainScene::init()
     // 基底クラスの初期化
     if ( !Layer::init() ) { return false; }
     
-    // タイトル背景レイヤーをシーンに追加
-    auto playerLayer = PlayerLayer::create();
-    addChild(playerLayer);
+    //auto playerLayer = PlayerLayer::create();
+    //addChild(playerLayer);
+    
+    auto manySpriteLayer = ManySpriteLayer::create();
+    addChild(manySpriteLayer);
     
     return true;
 }
