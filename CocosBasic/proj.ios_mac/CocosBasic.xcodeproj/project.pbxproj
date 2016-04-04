@@ -51,6 +51,7 @@
 		521A8EA919F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		5908C14B1CB2FA3500D8DB03 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5908C14A1CB2FA3500D8DB03 /* Singleton.cpp */; };
 		5924830F1C5CFE2F002AAC86 /* ManySpriteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5924830D1C5CFE2F002AAC86 /* ManySpriteLayer.cpp */; };
 		592483121C5D026B002AAC86 /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 592483111C5D026B002AAC86 /* favicon.ico */; };
 		592483141C5D0298002AAC86 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 592483131C5D0298002AAC86 /* HelloWorld.png */; };
@@ -152,10 +153,12 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5908C14A1CB2FA3500D8DB03 /* Singleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Singleton.cpp; sourceTree = "<group>"; };
 		5924830D1C5CFE2F002AAC86 /* ManySpriteLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManySpriteLayer.cpp; sourceTree = "<group>"; };
 		5924830E1C5CFE2F002AAC86 /* ManySpriteLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ManySpriteLayer.hpp; sourceTree = "<group>"; };
 		592483111C5D026B002AAC86 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
 		592483131C5D0298002AAC86 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
+		592EEC8B1CB2D42E000E1A53 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		59D171E81C3462BA009B05FD /* SampleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleLayer.cpp; sourceTree = "<group>"; };
 		59D171E91C3462BA009B05FD /* SampleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleLayer.h; sourceTree = "<group>"; };
 		59D171EB1C3462C8009B05FD /* SampleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleScene.cpp; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 				59EED1721C32B15E0030E992 /* Result */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
+				592EEC8B1CB2D42E000E1A53 /* Singleton.h */,
+				5908C14A1CB2FA3500D8DB03 /* Singleton.cpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -573,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				5908C14B1CB2FA3500D8DB03 /* Singleton.cpp in Sources */,
 				59D171ED1C3462C8009B05FD /* SampleScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				59D171F01C34713A009B05FD /* SampleTouchLayer.cpp in Sources */,

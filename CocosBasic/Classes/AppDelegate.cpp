@@ -2,6 +2,7 @@
 #include "TitleScene.h"
 #include "MainScene.h"
 #include "SampleScene.h"
+#include "Singleton.h"
 
 USING_NS_CC;
 
@@ -77,7 +78,15 @@ bool AppDelegate::applicationDidFinishLaunching()
     }
 
     register_all_packages();
-
+    
+    // シングルトンチェック
+    Singleton* instance1 = Singleton::getInstance();
+    SingletonNode* instance2 = SingletonNode::getInstance();
+    auto str1 = String::create(instance1->getClassName());
+    log("%s", str1->getCString());
+    auto str2 = String::create(instance2->getClassName());
+    log("%s", str2->getCString());
+    
     //シーンの生成
     auto scene = TitleScene::createScene();
 
